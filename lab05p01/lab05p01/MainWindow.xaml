@@ -1,0 +1,36 @@
+﻿<Window x:Class="lab05p01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab05p01"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="300" MinHeight="300" MaxHeight="600" MinWidth="200" MaxWidth="500">
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Top">
+            <Label Content="a:" DockPanel.Dock="Left" Margin="10,10" FontSize="12pt"/>
+            <TextBox x:Name="wartoscA" FontSize="16pt" Margin="10,10" TextAlignment="Right"/>
+        </DockPanel>
+        <DockPanel DockPanel.Dock="Top">
+            <Label Content="b:" DockPanel.Dock="Left" Margin="10,10" FontSize="12pt"/>
+            <TextBox x:Name="wartoscB" FontSize="16pt" Margin="10,10" TextAlignment="Right"/>
+        </DockPanel>
+        <DockPanel DockPanel.Dock="Top">
+            <Label Content="c:" DockPanel.Dock="Left" Margin="10,10" FontSize="12pt"/>
+            <TextBox x:Name="wartoscC" FontSize="16pt" Margin="10,10" TextAlignment="Right"/>
+        </DockPanel>
+        <StackPanel DockPanel.Dock="Top" Margin="10,10">
+            <RadioButton IsChecked="True">
+                Trójkąt prostokątnyt
+            </RadioButton>
+            <RadioButton>
+                Dowolny trójkąt
+            </RadioButton>
+        </StackPanel>
+        
+        <Button DockPanel.Dock="Bottom" FontSize="16pt" Margin="10,10" Click="Button_Click">Oblicz</Button>
+
+        <TextBlock x:Name="poleWynik" Background="AliceBlue" Margin="10,0"/>
+        
+    </DockPanel>
+</Window>
